@@ -44,6 +44,14 @@ export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
   amount: number;
 };
 
+export type RevenueSum = {
+  revenue: number;
+}
+
+export type RowCount = {
+  count: number;
+}
+
 export type InvoicesTable = {
   id: string;
   customer_id: string;
